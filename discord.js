@@ -1,0 +1,3 @@
+"dependencies": {
+  "discord.js": "^14.0.0"
+}
