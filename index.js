@@ -8,9 +8,10 @@ const client = new Client({
   ]
 });
 
-client.on("ready", () => {
-  console.log("Bot açıldı!");
+client.once('ready', () => {
+    console.log(`Bot ${client.user.tag} olarak giriş yaptı!`);
 });
+
 
 client.on("messageCreate", (message) => {
   if (message.content === "!ping") {
